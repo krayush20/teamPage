@@ -1,16 +1,16 @@
-body{
+body {
     margin: 0;
 }
 
-.main{
+.main {
     height: 100%;
     background-color: aqua;
     display: flex;
     line-height: 23px;
-    
+
 }
 
-.sub{
+.sub {
     display: inline;
     position: relative;
     width: 16.7%;
@@ -23,12 +23,12 @@ body{
 
 }
 
-.sub:nth-child(2n){
+.sub:nth-child(2n) {
     background: #212529;
-    transition: all 0.8s ease-in-out;
+
 }
 
-h4{
+h4 {
     margin: 0px;
     padding: 0px;
     display: inline;
@@ -39,23 +39,44 @@ h4{
     font-size: 2em;
     font-family: 'Inter', sans-serif;
     color: rgba(255, 255, 255, 0.55);
- 
+
 
 }
 
-.content{
+.content {
     display: none;
+
 }
 
-.sub:hover{
+
+.sub:hover {
     display: inline;
     position: relative;
     width: 25%;
     height: 100%;
-    transition: all 0.8s ease-in-out;
+
 }
 
-.sub:hover h4{
+.sub:hover {
+    padding-top: 40px;
+}
+
+.sub:hover .image img {
+    transform: scale(1.08);
+}
+
+.sub:hover .image img {
+
+
+    overflow: hidden;
+    display: block;
+    margin-left: 10px;
+    margin-right: 20px;
+    transition: 0.4s ease-out;
+
+}
+
+.sub:hover h4 {
     transform: rotate(0);
     margin-left: 100px;
     position: static;
@@ -67,13 +88,13 @@ h4{
     font-size: 2em;
 }
 
-.sub:hover .content{
+.sub:hover .content {
     display: block;
     color: rgba(255, 255, 255, 0.75);
 }
 
-img{
-    
+img {
+
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -81,26 +102,27 @@ img{
     overflow: hidden;
     display: block;
     margin-left: 90px;
-    
+    transition: 0.4s ease-out;
+
 }
 
-.image{
+.image {
     position: absolute;
     bottom: 0%;
     width: 100%;
     height: 50%;
-    
+
 
 }
 
-#lastPic{
-        position: absolute;
-        object-fit: contain;
-        height: 50%;
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
-        display: block;
-        right: 0;
-        
+#lastPic {
+    position: absolute;
+    object-fit: contain;
+    height: 50%;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    right: 0;
+
 }
